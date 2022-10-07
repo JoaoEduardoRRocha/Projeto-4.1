@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Cores do Backgroud do Site */
+body {
+    background:#BFD7E4;
+}
+
+.topside-dark-blue {
+    background: #293241;
+}
+
+.bottom-side {
+    background: white;
+}
+
