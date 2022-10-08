@@ -41,39 +41,45 @@
         </div>
 
         <div class="bottom-side">
+            <!-- Título do Formulário 1 -->
+            <div class="tittle-orange">
+                <legend>INFORMAÇÕES PESSOAIS</legend>
+            </div>
+
             <!-- Começo do Formulário -->
             <form id="form-main">
 
                 <!-- Primeira Parte do Formulário -->
                 <fieldset>
                     <div class="fieldset-wrapper">
-                         <!-- Título do Formulário 1 -->
-                        <legend class="tittle-orange">INFORMAÇÕES PESSOAIS</legend>
-
                         <!-- Campo do Nome -->
                         <div class="input-wrapper">
                             <label for="event-name">Nome</label>
                             <input type="text" id="event-name">
-
+                        </div>
+                        
+                        <div class="input-wrapper">
                         <!-- Campo do Sobrenome -->
                             <label for="evento-last-name">Sobrenome</label>
                             <input type="text" id="event-last-name">
                         </div>
-
-                        <!-- Campo do Email -->
-                        <div class="input-wrapper">
-                            <label for="event-email">Email<span>(digite um email válido)</span></label>
-                            <input type="text" id="event-email">
-                        </div>
+                    </div>
+                    
+                    <div class="fieldset-wrapper">
+                    <!-- Campo do Email -->
+                    <div class="input-wrapper">
+                        <label for="event-email">Email<span>(digite um email válido)</span></label>
+                        <input type="text" id="event-email">
+                    </div>
                     </div>
                 </fieldset>
-
+                
                 <!-- Segunda Parte do Formulário -->
                 <fieldset>
-                    <div class="fieldset-wrapper">
-                        <!-- Título do Formulário 2 -->
-                        <legend class="tittle-blue"> INFORMAÇÕES DO MENTOR</legend>
+                    <!-- Título do Formulário 2 -->
+                    <legend class="tittle-blue"> INFORMAÇÕES DO MENTOR</legend>
 
+                    <div class="fieldset-wrapper">
                         <!-- Campo de Selecionar o Mentor -->
                         <div class="input-wrapper">
                             <label for="event-select">Selecione quem foi o seu mentor</span></label>
@@ -82,41 +88,46 @@
                                 <option value="brito">Brito</option>
                             </select>
                         </div>
+                    </div>
 
+                    <div class="fieldset-wrapper">
                         <!-- Campo de texto de Feedback -->
                         <div class="input-wrapper">
                             <label for="event-feedback">Feedback sobre o mentor</span></label>
-                            <textarea id="event-feedback"></textarea>
-                        </div>
-
-                        <!-- Botão do Checkbox -->
-                        <div class="input-wrapper">
-                            <input type="checkbox" id="event-checkbox">
-                            <label for="event-check"> Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                            <textarea id="event-feedback" rows="5"></textarea>
                         </div>
                     </div>
+
+                    <!-- Botão do Checkbox -->
+                    <div class="input-wrapper">
+                        <input type="checkbox" id="event-checkbox">
+                        <label for="event-check"> Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div>
+
                 </fieldset>
 
                 <!-- Terceira Parte do Formulário -->
                 <fieldset>
-                    <div class="fieldset-wrapper">
 
                         <!-- Título do Formulário 3 -->
                         <legend class="tittle-blue"> AGENDANDO PRÓXIMA MENTORIA</legend>
+
+                    <div class="fieldset-wrapper">
+
                         <!-- Campo de Data -->
-                        <div class="">
+                        <div class="input-wrapper">
                             <label for="event-date"> Data <span>(DD/MM/AAAA)</span>.</label>
                             <input type="date" id="event-date">
                         </div>  
 
                         <!-- Campo do Horário que Começa -->
-                        <div class="">
-                            <label for="event-begin"> Das.</label>
+                        <div class="input-wrapper small">
+                            <label for="event-begin"> Das </label>
                             <input type="time" id="event-begin">
                         </div>
 
                         <!-- Campo do Horário de Término -->
-                        <div class="">
+                        <div class="input-wrapper small">
                             <label for="event-end"> Até </label>
                             <input type="time" id="event-end">
                         </div>

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Cores do Backgroud do Site */
@@ -10,9 +11,53 @@ body {
 
 .topside-dark-blue {
     background: #293241;
+    text-align: center;
+    padding: 107px 0 225px;
 }
 
 .bottom-side {
     background: white;
+    max-width: 750px;
+    margin: -118px auto 0;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
 }
 
+form {
+    padding: 30px 64px 64px;
+}
+
+.tittle-orange {
+    background: #F67669;
+    text-align: center;
+    padding: 50px 0 50px;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    margin: 0 -11px;  
+}
+
+.input-wrapper label {
+    display: block; 
+}
+
+.input-wrapper{
+    width: 100%;
+    margin: 0 11px;
+}
+
+.input-wrapper input, .input-wrapper select {
+    display: block; 
+    width: 100%;
+}
+
+.input-wrapper textarea {
+    resize: none;
+    width: 100%;
+}
+
+.input-wrapper.small {
+    width: 50%;
+}
