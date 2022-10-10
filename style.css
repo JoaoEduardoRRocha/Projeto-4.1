@@ -4,60 +4,178 @@
     box-sizing: border-box;
 }
 
-/* Cores do Backgroud do Site */
+/* cores do Backgroud do Site */
 body {
     background:#BFD7E4;
 }
 
+/* parte de cima do formulário */
 .topside-dark-blue {
     background: #293241;
     text-align: center;
     padding: 107px 0 225px;
 }
 
+/* parte de baixo do formulário */
 .bottom-side {
     background: white;
     max-width: 750px;
-    margin: -118px auto 0;
+    margin: -134px auto 0;
     border-radius: 16px;
     overflow: hidden;
     width: 100%;
 }
 
+/* carrega todo o formulário, legends, labels e inputs */
 form {
     padding: 30px 64px 64px;
 }
 
+/* título fixado no meio da tela com background laranja */
 .tittle-orange {
     background: #F67669;
     text-align: center;
     padding: 50px 0 50px;
 }
 
+/* as Divs que carregam todos os inputs com as labels */
 .fieldset-wrapper {
     display: flex;
     margin: 0 -11px;  
 }
 
-.input-wrapper label {
-    display: block; 
+input, select, textarea, #event-checkbox {
+    background: #f4f4fa;
+    border: 1px solid #d8d8db;
 }
 
+.input-wrapper #event-checkbox {
+    display: none;
+    
+}
+
+/* especificando o filho LABEL da DIV pai */
+.input-wrapper label {
+    display: block; 
+    padding: 8px 0px;
+}
+
+
+/* campo de escrita da interface */
 .input-wrapper{
     width: 100%;
     margin: 0 11px;
 }
 
+/* selecionando mais de 2 seletores com especificações */
 .input-wrapper input, .input-wrapper select {
     display: block; 
     width: 100%;
+    height: 55px;
+    
 }
 
+.input-wrapper #event-checkbox {
+    height: 22px; 
+}
+
+/* campo de escrita de texto  da interface */
 .input-wrapper textarea {
     resize: none;
     width: 100%;
 }
 
+/* os 2 campos menores do footer */
 .input-wrapper.small {
     width: 50%;
+}
+
+/* estilizando textos e as cores */
+
+h1, .tittle-orange, footer, legend  {
+    font-family: 'Staatliches', sans-serif;
+    text-align: center;
+}
+
+h1, p, .tittle-orange, footer button {
+    color: white;
+}
+
+.tittle-blue {
+    color: #293241;
+}
+
+p, .input-wrapper  {
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    color: #C1BCCC
+}
+
+/* aplicando o tamanho certo das fontes */
+
+h1 {
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.input-wrapper {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+legend {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+/* removendo borda do field set */
+fieldset {
+    border: none;
+}
+
+/* criando a linha em baixo dos legends azuis */
+.tittle-blue {
+    border-bottom: 1px solid #E6E6F0;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* alinhando a imagem SVG do meio da tela */
+.icon {
+    margin-bottom: -50px;
+
+}
+
+/* espaçamento top do legend azul */
+fieldset .tittle-blue {
+    margin-top: 36px;
+}
+
+/* alinhando botão checkbox com a label */
+.input-wrapper #event-checkbox1,.input-wrapper #event-email {
+    margin-bottom: 36px;
+}
+
+/* botão SALVAR */
+footer {
+    margin-top: 65px;
+}
+
+footer button {
+    width: 622px;
+    height: 51px;
+    border: none;
+    background: #F67669;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
 }

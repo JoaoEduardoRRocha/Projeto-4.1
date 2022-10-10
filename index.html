@@ -84,6 +84,7 @@
                         <div class="input-wrapper">
                             <label for="event-select">Selecione quem foi o seu mentor</span></label>
                             <select id="event-select">
+                                <option value="mayk"></option>
                                 <option value="mayk">Mayk</option>
                                 <option value="brito">Brito</option>
                             </select>
@@ -93,15 +94,15 @@
                     <div class="fieldset-wrapper">
                         <!-- Campo de texto de Feedback -->
                         <div class="input-wrapper">
-                            <label for="event-feedback">Feedback sobre o mentor</span></label>
-                            <textarea id="event-feedback" rows="5"></textarea>
+                            <label for="event-feedback">Feedback sobre o mentor</label>
+                            <textarea id="event-feedback" rows="10"></textarea>
                         </div>
                     </div>
 
                     <!-- Botão do Checkbox -->
                     <div class="input-wrapper">
                         <input type="checkbox" id="event-checkbox">
-                        <label for="event-check"> Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                        <label for="event-check" id="event-checkbox1"> Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
                     </div>
 
                 </fieldset>
@@ -132,8 +133,13 @@
                             <input type="time" id="event-end">
                         </div>
                     </div>
+                    
+                    <footer>
+                        <button>SALVAR</button>
+                    </footer>
                 </fieldset>
             </form>
+            
         </div>
     </body>
 </html>
