@@ -1,4 +1,4 @@
-![preview](/preview/preview.png)
+![preview](/preview/img.png)
 
 >PT-BR
 
